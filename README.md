@@ -37,6 +37,6 @@ qMem.apply_gate([0,1], CNOT)
 print('entangled state:', qMem.qstate.real)
 ```
 
-In the test cases for QuIPPy, more usage examples can be found, most of them
+In the [test cases](./tests/q_mem_tests.py), more usage examples can be found, most of them
 based on examples from the book `Quantum Computation and Quantum Information`
 by Michael A. Nielsen and Isaac L. Chuang.
