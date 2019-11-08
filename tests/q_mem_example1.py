@@ -34,3 +34,8 @@ qMem.apply_gate([1], H)
 qMem.apply_gate([0,1], CNOT)
 
 print('entangled state:', qMem.qstate.real)
+
+out1,out0 = qMem.measure([1,0])
+print( 'Measurement: |{:d}{:d}〉'.format(out1,out0) ) # <- either |00〉or |11〉
+
+print('collapsed state:', qMem.qstate.real)
